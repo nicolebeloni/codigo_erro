@@ -4,8 +4,7 @@ $user = "root";
 $password = "";
 $database = "crud_aula";
 
-$conn = mysqli_connect($host, $user, $password, $database);
-
+$conn = new mysqli($host, $user, $password, $database);
 if ($conn->connect_error) {
     die("erro na conexão: " . $conn->connect_error);
 }
@@ -114,10 +113,3 @@ $resultado = $conn->query($sql);
     </table>
 </body>
 </html>
-
-
-
-
-
-
-?>
