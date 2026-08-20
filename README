@@ -1,0 +1,7 @@
+erro na linha 57 "$resultado = $conn->query($sql)" falta um ;
+
+"$stmt->bind_param("ss", $nome, $email)" falta ;
+
+$sql = "INSERT INTO usuarios (nome, email) VALUES ('$nome', '$email')";
+
+primeiro if do codigo 1, falta um ;
